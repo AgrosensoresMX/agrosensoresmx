@@ -136,13 +136,13 @@ tr:hover td{background:#fafff8}
 <script>
 const SUPA_URL = 'https://hcwelstbmcpbopjaetdd.supabase.co';
 const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhjd2Vsc3RibWNwYm9wamFldGRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODExMzc0NzEsImV4cCI6MjA5NjcxMzQ3MX0.WXFyh1pwNKJiHca-gH8S9vgLMBXnfyGgnH8lOFNRLOg';
-const supabase = window.supabase.createClient(SUPA_URL, SUPA_KEY);
+const _supa = window.supabase.createClient(SUPA_URL, SUPA_KEY);
 
 let allQuotes = [];
 
 // ── Auth guard ────────────────────────────────────────────
 async function init() {
-  const { data: { session } } = await supabase.auth.getSession();
+  const { data: { session } } = await _supa.auth.getSession();
   if (!session) { window.location.href = 'login.html'; return; }
   document.getElementById('userEmail').textContent = session.user.email;
   await loadQuotes();
@@ -213,7 +213,7 @@ async function updateStatus(id, btn) {
   const current  = allQuotes.find(q=>q.id===id)?.status || 'draft';
   const next     = statuses[(statuses.indexOf(current)+1) % statuses.length];
   if (!confirm(`Change status to "${next}"?`)) return;
-  await supabase.from('quotes').update({status: next}).eq('id', id);
+  await _supa.from('quotes').update({status: next}).eq('id', id);
   await loadQuotes();
 }
 
@@ -237,7 +237,7 @@ document.getElementById('fIncoterm').addEventListener('change', applyFilters);
 
 // ── Logout ────────────────────────────────────────────────
 document.getElementById('btnLogout').addEventListener('click', async () => {
-  await supabase.auth.signOut();
+  await _supa.auth.signOut();
   window.location.href = 'login.html';
 });
 

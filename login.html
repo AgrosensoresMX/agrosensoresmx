@@ -54,14 +54,12 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--od);min-height
 <script>
 const SUPA_URL = 'https://hcwelstbmcpbopjaetdd.supabase.co';
 const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhjd2Vsc3RibWNwYm9wamFldGRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODExMzc0NzEsImV4cCI6MjA5NjcxMzQ3MX0.WXFyh1pwNKJiHca-gH8S9vgLMBXnfyGgnH8lOFNRLOg';
-const supabase = window.supabase.createClient(SUPA_URL, SUPA_KEY);
+const _supa = window.supabase.createClient(SUPA_URL, SUPA_KEY);
 
-// Embed logo as base64 — same file used in quotation tool
-// Logo loaded from same directory
 document.getElementById('logoImg').src = 'logo.png';
 
 // If already logged in, redirect
-supabase.auth.getSession().then(({data:{session}}) => {
+_supa.auth.getSession().then(({data:{session}}) => {
   if (session) window.location.href = 'dashboard.html';
 });
 
@@ -79,7 +77,7 @@ document.getElementById('btnLogin').addEventListener('click', async () => {
   btn.textContent = 'Signing in…';
   errEl.style.display = 'none';
 
-  const { error } = await supabase.auth.signInWithPassword({ email, password });
+  const { error } = await _supa.auth.signInWithPassword({ email, password });
   if (error) {
     showError('Invalid email or password. Please try again.');
     btn.disabled = false;

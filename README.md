@@ -1,55 +1,28 @@
-# AgrosensoresMX — Export Quotation System
+# Agrosensores y Semillas de México — Sitio web
 
-Sistema de cotización de exportación agrícola para **Agrosensores y Semillas de México**.
+Landing page (Hero) corporativa multilingüe para **www.agrosensores.mx**.
 
-## Archivos
+## Contenido
+- `index.html` — Landing principal (Hero, catálogo, CRM/WhatsApp, certificaciones, mapa, blog, footer)
+- `faq.html` — Preguntas frecuentes (7 idiomas)
+- `blog.html` — Listado de noticias
+- `blog/` — Artículos
+- `images/` — Fotografías de producto, fotos del carrusel del Hero, logos y Open Graph
+- `image-slot.js` — Componente para reemplazar fotos por arrastrar y soltar
 
-| Archivo | Descripción |
-|---|---|
-| `login.html` | Pantalla de acceso (Supabase Auth) |
-| `dashboard.html` | Panel de cotizaciones guardadas |
-| `cotizador.html` | Cotizador de exportación EXW / CPT |
-| `logo.png` | Logo de Agrosensores |
-| `schema.sql` | Schema de base de datos para Supabase |
+## Idiomas
+Español · Inglés · Francés · Árabe (RTL) · Ruso · Chino · Coreano
 
-## Setup inicial
+## Despliegue en HostGator (producción)
+1. cPanel → **Administrador de archivos** → `public_html`
+2. Sube **el contenido** de esta carpeta (no la carpeta en sí)
+3. `www.agrosensores.mx` cargará `index.html`
 
-### 1. Base de datos Supabase
-1. Abre **[supabase.com](https://supabase.com)** → proyecto `hcwelstbmcpbopjaetdd`
-2. Ve a **SQL Editor → New query**
-3. Pega el contenido de `schema.sql` → **Run**
+## Notas técnicas
+- React + Babel y Leaflet/OpenStreetMap se cargan desde CDN (requiere conexión).
+- Google Analytics: `G-2QXDM25B30` ya integrado.
+- WhatsApp: +52 452 269 3414 · Correo: agrosensoresmx@gmail.com
+- El blog se gestionará con WordPress en `blog.agrosensores.mx`.
 
-### 2. Crear usuario administrador
-En Supabase → **Authentication → Users → Add user**
-- Email: `ariel@agrosensores.com.mx` (o el que prefieras)
-- Password: elige una contraseña segura
-
-### 3. GitHub Pages
-1. Ve al repositorio en GitHub
-2. **Settings → Pages → Source:** `Deploy from a branch`
-3. **Branch:** `main` / `root`
-4. El sitio quedará en: `https://agrosensoresmx.github.io/agrosensoresmx/login.html`
-
-### 4. Dominio personalizado (opcional)
-En GitHub Pages → **Custom domain** → agrega `cotizador.agrosensores.com.mx`
-
-## Flujo de uso
-
-```
-login.html → dashboard.html → cotizador.html (nuevo o existente)
-```
-
-1. Inicia sesión con tu email y contraseña
-2. En el dashboard verás todas las cotizaciones guardadas
-3. Crea una nueva o abre una existente
-4. Completa los 5 bloques y guarda con el botón **Save Quote**
-5. Imprime como PDF con **Print / PDF**
-
-## Tecnologías
-
-- HTML / CSS / JS puro — sin frameworks
-- [Supabase](https://supabase.com) — auth + base de datos PostgreSQL
-- GitHub Pages — hosting estático gratuito
-
----
-*Agrosensores y Semillas de México · agrosensoresmx@gmail.com · +52 (452) 269-3414*
+## Carrusel del Hero
+6 diapositivas con fotografía real: Aguacate Hass · Cítricos · Nuez Pecanera · Pinos Mexicanos · Agaves · **Sensores IoT de Monitoreo Agrícola**.

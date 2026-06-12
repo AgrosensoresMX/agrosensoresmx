@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QXDM25B30"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2QXDM25B30');
+  </script>
+  <title>Noticias · Agrosensores y Semillas de México</title>
+  <meta name="description" content="Noticias y guías técnicas sobre propagación, semillas patrón, portainjertos y exportación de material vegetal mexicano." />
+  <link rel="canonical" href="https://www.agrosensores.mx/blog.html" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Agrosensores y Semillas de México" />
+  <meta property="og:url" content="https://www.agrosensores.mx/blog.html" />
+  <meta property="og:title" content="Noticias y guías técnicas · Agrosensores" />
+  <meta property="og:description" content="Guías técnicas sobre propagación, semillas patrón, portainjertos y exportación de material vegetal mexicano certificado." />
+  <meta property="og:image" content="https://www.agrosensores.mx/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.agrosensores.mx/images/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <script src="image-slot.js"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    :root { --bg:#0E1508; --bg2:#0C1A0A; --cream:#F5EDE0; --olive:#8A9A52; --olive-l:#A6B86A; --tan:#C49A6A; --brown:#7B3F18; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--cream); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    img { display:block; max-width:100%; }
+
+    .nav { position:sticky; top:0; z-index:100; min-height:66px; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:0 40px; background:rgba(14,21,8,.94); backdrop-filter:blur(20px); border-bottom:1px solid rgba(138,154,82,.16); }
+    .nav-l,.nav-r { display:flex; align-items:center; gap:18px; }
+    .nav img.logo { height:34px; width:auto; filter:brightness(1.6) saturate(.85); }
+    .nav .back { font-size:13.5px; color:rgba(245,237,224,.6); white-space:nowrap; transition:color .2s; }
+    .nav .back:hover { color:var(--tan); }
+    .lang-pills { display:flex; background:rgba(255,255,255,.05); border-radius:8px; padding:3px; gap:1px; }
+    .lpill { background:none; border:none; color:rgba(245,237,224,.45); padding:4px 9px; border-radius:6px; font-size:11px; font-weight:500; font-family:'DM Sans',sans-serif; cursor:pointer; letter-spacing:.04em; white-space:nowrap; }
+    .lpill:hover { color:var(--olive); background:rgba(138,154,82,.12); }
+    .lpill.on { color:var(--tan); background:rgba(196,154,106,.14); font-weight:700; }
+
+    .head { max-width:1180px; margin:0 auto; padding:70px 40px 30px; text-align:center; position:relative; }
+    .head::after { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 55% 80% at 50% 0%, rgba(138,154,82,.1), transparent 70%); pointer-events:none; }
+    .kicker { color:var(--olive); font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; margin-bottom:16px; }
+    .head h1 { font-family:'Cormorant Garant',serif; font-size:clamp(42px,6vw,68px); font-weight:700; line-height:1.02; }
+    .head h1 em { color:var(--tan); font-style:italic; }
+    .head p { max-width:600px; margin:20px auto 0; font-size:16px; line-height:1.65; color:rgba(245,237,224,.58); }
+
+    .wrap { max-width:1180px; margin:0 auto; padding:24px 40px 90px; }
+
+    /* featured */
+    .featured { display:grid; grid-template-columns:1.15fr 1fr; gap:0; border:1px solid rgba(138,154,82,.2); border-radius:24px; overflow:hidden; background:linear-gradient(150deg,#15290F,#0C1A0A); margin-bottom:54px; transition:border-color .3s, transform .3s; }
+    .featured:hover { border-color:rgba(138,154,82,.5); transform:translateY(-4px); }
+    .featured .img { position:relative; min-height:380px; }
+    .featured .img image-slot { position:absolute; inset:0; width:100%; height:100%; }
+    .featured .img .ribbon { position:absolute; top:20px; left:20px; z-index:3; background:var(--tan); color:var(--bg); font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:6px 14px; border-radius:20px; }
+    .featured .txt { padding:46px 44px; display:flex; flex-direction:column; justify-content:center; }
+    .featured .cat { font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--olive); margin-bottom:16px; }
+    .featured h2 { font-family:'Cormorant Garant',serif; font-size:clamp(28px,3.4vw,40px); font-weight:700; line-height:1.12; margin-bottom:16px; }
+    .featured .ex { font-size:15.5px; line-height:1.65; color:rgba(245,237,224,.62); margin-bottom:22px; }
+    .featured .m { display:flex; align-items:center; gap:14px; font-size:13px; color:rgba(245,237,224,.45); margin-bottom:24px; }
+    .featured .m .dot { width:4px; height:4px; border-radius:50%; background:rgba(245,237,224,.3); }
+    .readmore { display:inline-flex; align-items:center; gap:8px; color:var(--olive-l); font-weight:600; font-size:14.5px; }
+    .featured:hover .readmore { color:var(--tan); }
+
+    .sec-label { font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:rgba(245,237,224,.4); margin-bottom:22px; display:flex; align-items:center; gap:14px; }
+    .sec-label::after { content:''; flex:1; height:1px; background:rgba(138,154,82,.16); }
+
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .card { border:1px solid rgba(138,154,82,.16); border-radius:18px; overflow:hidden; background:rgba(245,237,224,.025); transition:border-color .25s, transform .25s, background .25s; display:flex; flex-direction:column; }
+    .card.live:hover { border-color:rgba(138,154,82,.45); transform:translateY(-4px); background:rgba(138,154,82,.05); }
+    .card .ci { position:relative; height:172px; background:#0C1A0A; }
+    .card .ci image-slot { position:absolute; inset:0; width:100%; height:100%; }
+    .card .ci .ph-grad { position:absolute; inset:0; z-index:2; }
+    .card .badge { position:absolute; top:14px; left:14px; z-index:3; font-size:10px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; padding:5px 11px; border-radius:14px; }
+    .card .badge.soon { background:rgba(14,21,8,.78); color:var(--tan); border:1px solid rgba(196,154,106,.4); backdrop-filter:blur(6px); }
+    .card .cc { padding:22px 22px 24px; flex:1; display:flex; flex-direction:column; }
+    .card .cat { font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--olive); margin-bottom:10px; }
+    .card h3 { font-family:'Cormorant Garant',serif; font-size:23px; font-weight:700; line-height:1.18; margin-bottom:10px; }
+    .card .ex { font-size:14px; line-height:1.6; color:rgba(245,237,224,.55); flex:1; }
+    .card .cm { margin-top:16px; font-size:12.5px; color:rgba(245,237,224,.4); }
+    .card.soon-card { opacity:.82; }
+    .card.soon-card .ci { display:flex; align-items:center; justify-content:center; }
+    .card.soon-card .leaf { font-size:42px; opacity:.5; z-index:1; }
+
+    /* newsletter */
+    .news { margin-top:64px; padding:48px 44px; border-radius:24px; background:linear-gradient(150deg,#15290F,#0C1A0A); border:1px solid rgba(138,154,82,.2); text-align:center; }
+    .news h3 { font-family:'Cormorant Garant',serif; font-size:32px; font-weight:700; margin-bottom:10px; }
+    .news p { color:rgba(245,237,224,.58); font-size:15px; margin-bottom:26px; max-width:480px; margin-left:auto; margin-right:auto; }
+    .news form { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+    .news input { background:rgba(245,237,224,.06); border:1px solid rgba(138,154,82,.25); border-radius:11px; padding:13px 18px; font-size:14px; color:var(--cream); font-family:'DM Sans',sans-serif; width:300px; max-width:100%; outline:none; transition:border-color .2s; }
+    .news input:focus { border-color:var(--olive); }
+    .news input::placeholder { color:rgba(245,237,224,.4); }
+    .news button { background:linear-gradient(135deg,#8A9A52,#5C6B3A); color:var(--bg); font-weight:700; font-size:14px; padding:13px 26px; border:none; border-radius:11px; cursor:pointer; font-family:'DM Sans',sans-serif; transition:transform .2s, box-shadow .2s; }
+    .news button:hover { transform:translateY(-2px); box-shadow:0 12px 28px rgba(138,154,82,.35); }
+    .news .ok { color:var(--olive-l); font-size:14px; margin-top:6px; }
+
+    footer { background:#070D04; border-top:1px solid rgba(138,154,82,.1); padding:34px 40px; text-align:center; color:rgba(245,237,224,.4); font-size:13px; }
+    footer a { color:var(--olive); }
+
+    [dir=rtl] .featured .m, [dir=rtl] .head p { text-align:center; }
+
+    @media (max-width:920px){ .grid { grid-template-columns:repeat(2,1fr); } .featured { grid-template-columns:1fr; } .featured .img { min-height:240px; } }
+    @media (max-width:680px){
+      .nav { padding:0 16px; gap:10px; } .nav .back { display:none; } .lang-pills { overflow-x:auto; }
+      .wrap { padding:20px 20px 70px; } .grid { grid-template-columns:1fr; } .featured .txt { padding:32px 26px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-l">
+      <a href="index.html" aria-label="Inicio"><img class="logo" src="images/logo.png" alt="Agrosensores y Semillas de México" /></a>
+      <a class="back" id="back" href="index.html">← Inicio</a>
+    </div>
+    <div class="nav-r">
+      <div class="lang-pills" id="pills">
+        <button class="lpill" data-l="es">ES</button>
+        <button class="lpill" data-l="en">EN</button>
+        <button class="lpill" data-l="fr">FR</button>
+        <button class="lpill" data-l="ar">AR</button>
+        <button class="lpill" data-l="ru">RU</button>
+        <button class="lpill" data-l="zh">中文</button>
+        <button class="lpill" data-l="ko">한국어</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="head">
+    <div class="kicker" id="kicker"></div>
+    <h1 id="h1"></h1>
+    <p id="lead"></p>
+  </header>
+
+  <main class="wrap">
+    <a class="featured" id="featured" href="blog/semilla-aguacate-mexicano.html">
+      <div class="img">
+        <span class="ribbon" id="ribbon"></span>
+        <image-slot id="feat-img" src="images/blog-avocado-seeds-hero.png" placeholder="Imagen destacada" shape="rect"></image-slot>
+      </div>
+      <div class="txt">
+        <div class="cat" id="fCat"></div>
+        <h2 id="fTitle"></h2>
+        <div class="ex" id="fEx"></div>
+        <div class="m" id="fMeta"></div>
+        <span class="readmore" id="fRead"></span>
+      </div>
+    </a>
+
+    <div class="sec-label" id="moreLabel"></div>
+    <div class="grid" id="grid"></div>
+
+    <section class="news">
+      <h3 id="nH"></h3>
+      <p id="nP"></p>
+      <form id="nForm" onsubmit="return subscribe(event)">
+        <input type="email" id="nEmail" required />
+        <button type="submit" id="nBtn"></button>
+      </form>
+      <div class="ok" id="nOk" style="display:none"></div>
+    </section>
+  </main>
+
+  <footer id="foot"></footer>
+
+  <script>
+  const T = {
+    es:{back:'← Inicio',kicker:'Noticias · Lo más reciente',h1a:'Noticias',h1b:'y guías técnicas',
+      lead:'Conocimiento de vivero, propagación y exportación de material vegetal mexicano para productores de todo el mundo.',
+      ribbon:'Destacado',fCat:'Propagación · Aguacate',
+      fTitle:'Semilla Patrón de Aguacate Mexicano: el origen sano que define tu huerto',
+      fEx:'La mitad oculta del árbol —el portainjerto— determina la longevidad, sanidad y productividad de tu plantación de Hass. Conoce las 6 semillas patrón mexicanas y su tolerancia de pH.',
+      fMetaA:'Equipo Agrosensores',fMetaB:'Junio 2026',fMetaC:'9 min',fRead:'Leer artículo →',
+      more:'Próximos artículos',soon:'Próximamente',min:'min',
+      cards:[
+        {cat:'Propagación · Pinos',t:'Pinos mexicanos para reforestación y exportación',ex:'Producción de planta forestal de pino y cedro en vivero certificado, lista para proyectos de reforestación.'},
+        {cat:'Propagación · Cítricos',t:'Portainjertos de cítricos: la base de un huerto sano',ex:'Cómo elegir el portainjerto correcto para limón persa y otros cítricos según tu suelo y clima.'},
+        {cat:'Propagación · Nuez',t:'Nuez pecanera injertada: calidad desde el patrón',ex:'Variedades, calibres y manejo del árbol injertado de nuez pecanera para exportación.'},
+        {cat:'Tecnología · IoT',t:'Sensores Farm21: agricultura de precisión en el vivero',ex:'Monitoreo en tiempo real de humedad, temperatura y nutrientes a múltiples profundidades de suelo.'},
+        {cat:'Exportación',t:'Vareta y yema (scion · budwood): guía del comprador',ex:'Qué es la vareta, cómo se injerta y qué requisitos fitosanitarios aplican para su importación.'},
+        {cat:'Propagación · Agave',t:'Agave azul In-Vitro: propagación clonal a escala',ex:'Producción de planta de agave tequilana por cultivo de tejidos para plantaciones comerciales.'}
+      ],
+      nH:'Recibe nuestras guías técnicas',nP:'Suscríbete y recibe nuevos artículos sobre propagación y exportación directamente en tu correo.',
+      nPlace:'Tu correo electrónico',nBtn:'Suscribirme',nOk:'¡Gracias! Te avisaremos cuando publiquemos.',home:'Inicio'},
+
+    en:{back:'← Home',kicker:'News · Latest',h1a:'News',h1b:'& technical guides',
+      lead:'Nursery, propagation and export knowledge of Mexican plant material for growers worldwide.',
+      ribbon:'Featured',fCat:'Propagation · Avocado',
+      fTitle:'Mexican Avocado Pattern Seeds: the healthy origin that defines your orchard',
+      fEx:'The hidden half of the tree —the rootstock— determines the longevity, health and productivity of your Hass orchard. Discover the 6 Mexican pattern seeds and their pH tolerance.',
+      fMetaA:'Agrosensores Team',fMetaB:'June 2026',fMetaC:'9 min',fRead:'Read article →',
+      more:'Upcoming articles',soon:'Coming soon',min:'min',
+      cards:[
+        {cat:'Propagation · Pines',t:'Mexican pines for reforestation and export',ex:'Forest plant production of pine and cedar in a certified nursery, ready for reforestation projects.'},
+        {cat:'Propagation · Citrus',t:'Citrus rootstocks: the base of a healthy orchard',ex:'How to choose the right rootstock for Persian lime and other citrus based on your soil and climate.'},
+        {cat:'Propagation · Pecan',t:'Grafted pecan: quality from the rootstock',ex:'Varieties, sizing and management of grafted pecan trees for export.'},
+        {cat:'Technology · IoT',t:'Farm21 sensors: precision agriculture in the nursery',ex:'Real-time monitoring of moisture, temperature and nutrients at multiple soil depths.'},
+        {cat:'Export',t:'Scion & budwood: the buyer\'s guide',ex:'What scion wood is, how it is grafted and the phytosanitary requirements for its import.'},
+        {cat:'Propagation · Agave',t:'In-Vitro blue agave: clonal propagation at scale',ex:'Production of Agave tequilana plants through tissue culture for commercial plantations.'}
+      ],
+      nH:'Get our technical guides',nP:'Subscribe and receive new articles on propagation and export straight to your inbox.',
+      nPlace:'Your email address',nBtn:'Subscribe',nOk:'Thank you! We\'ll let you know when we publish.',home:'Home'},
+
+    fr:{back:'← Accueil',kicker:'Actualités · Récent',h1a:'Actualités',h1b:'et guides techniques',
+      lead:'Connaissances en pépinière, propagation et exportation de matériel végétal mexicain pour les producteurs du monde entier.',
+      ribbon:'À la une',fCat:'Propagation · Avocat',
+      fTitle:'Graines souches d\'avocat mexicain : l\'origine saine qui définit votre verger',
+      fEx:'La moitié cachée de l\'arbre —le porte-greffe— détermine la longévité, la santé et la productivité de votre verger Hass. Découvrez les 6 graines souches mexicaines.',
+      fMetaA:'Équipe Agrosensores',fMetaB:'Juin 2026',fMetaC:'9 min',fRead:'Lire l\'article →',
+      more:'Prochains articles',soon:'Bientôt',min:'min',
+      cards:[
+        {cat:'Propagation · Pins',t:'Pins mexicains pour reforestation et export',ex:'Production de plants forestiers de pin et cèdre en pépinière certifiée.'},
+        {cat:'Propagation · Agrumes',t:'Porte-greffes d\'agrumes : la base d\'un verger sain',ex:'Comment choisir le bon porte-greffe pour le citron vert et autres agrumes.'},
+        {cat:'Propagation · Noix',t:'Noix de pécan greffée : la qualité dès le porte-greffe',ex:'Variétés, calibres et gestion de l\'arbre greffé de noix de pécan pour l\'export.'},
+        {cat:'Technologie · IoT',t:'Capteurs Farm21 : agriculture de précision',ex:'Surveillance en temps réel de l\'humidité, température et nutriments du sol.'},
+        {cat:'Exportation',t:'Greffon et bourgeon : le guide de l\'acheteur',ex:'Ce qu\'est le greffon, comment il est greffé et les exigences phytosanitaires.'},
+        {cat:'Propagation · Agave',t:'Agave bleu In-Vitro : propagation clonale à grande échelle',ex:'Production de plants d\'agave tequilana par culture de tissus.'}
+      ],
+      nH:'Recevez nos guides techniques',nP:'Abonnez-vous et recevez les nouveaux articles sur la propagation et l\'exportation.',
+      nPlace:'Votre adresse e-mail',nBtn:'S\'abonner',nOk:'Merci ! Nous vous préviendrons à la publication.',home:'Accueil'},
+
+    ar:{back:'الرئيسية ←',kicker:'الأخبار · الأحدث',h1a:'الأخبار',h1b:'والأدلة التقنية',
+      lead:'معرفة المشاتل والإكثار وتصدير المواد النباتية المكسيكية للمزارعين في جميع أنحاء العالم.',
+      ribbon:'مميز',fCat:'الإكثار · الأفوكادو',
+      fTitle:'بذور أصل الأفوكادو المكسيكي: الأصل السليم الذي يحدد بستانك',
+      fEx:'النصف الخفي من الشجرة —الأصل— يحدد طول عمر بستان هاس وصحته وإنتاجيته. اكتشف بذور الأصل المكسيكية الست.',
+      fMetaA:'فريق Agrosensores',fMetaB:'يونيو 2026',fMetaC:'9 دقائق',fRead:'← اقرأ المقال',
+      more:'مقالات قادمة',soon:'قريباً',min:'دقيقة',
+      cards:[
+        {cat:'الإكثار · الصنوبر',t:'الصنوبر المكسيكي لإعادة التشجير والتصدير',ex:'إنتاج شتلات الصنوبر والأرز الحرجية في مشتل معتمد.'},
+        {cat:'الإكثار · الحمضيات',t:'أصول الحمضيات: أساس بستان سليم',ex:'كيفية اختيار الأصل المناسب لليمون والحمضيات الأخرى.'},
+        {cat:'الإكثار · الجوز',t:'جوز البيكان المطعّم: الجودة من الأصل',ex:'الأصناف والمعايير وإدارة شجرة جوز البيكان المطعّمة للتصدير.'},
+        {cat:'التقنية · IoT',t:'مستشعرات Farm21: الزراعة الدقيقة',ex:'مراقبة فورية للرطوبة ودرجة الحرارة والمغذيات في التربة.'},
+        {cat:'التصدير',t:'القلم والبرعم: دليل المشتري',ex:'ما هو القلم وكيف يُطعّم والمتطلبات الصحية النباتية لاستيراده.'},
+        {cat:'الإكثار · الأغاف',t:'الأغاف الأزرق In-Vitro: إكثار نسيلي واسع',ex:'إنتاج نبات الأغاف عبر زراعة الأنسجة للمزارع التجارية.'}
+      ],
+      nH:'احصل على أدلتنا التقنية',nP:'اشترك واستقبل المقالات الجديدة عن الإكثار والتصدير مباشرة في بريدك.',
+      nPlace:'بريدك الإلكتروني',nBtn:'اشتراك',nOk:'شكراً! سنخبرك عند النشر.',home:'الرئيسية'},
+
+    ru:{back:'← Главная',kicker:'Новости · Последнее',h1a:'Новости',h1b:'и технические руководства',
+      lead:'Знания о питомнике, размножении и экспорте мексиканского растительного материала для производителей по всему миру.',
+      ribbon:'Рекомендуем',fCat:'Размножение · Авокадо',
+      fTitle:'Семена-патрон мексиканского авокадо: здоровое происхождение вашего сада',
+      fEx:'Скрытая половина дерева —подвой— определяет долговечность, здоровье и продуктивность сада Хасс. Узнайте о 6 мексиканских семенах-патрон.',
+      fMetaA:'Команда Agrosensores',fMetaB:'Июнь 2026',fMetaC:'9 мин',fRead:'Читать статью →',
+      more:'Будущие статьи',soon:'Скоро',min:'мин',
+      cards:[
+        {cat:'Размножение · Сосны',t:'Мексиканские сосны для лесовосстановления и экспорта',ex:'Производство лесных саженцев сосны и кедра в сертифицированном питомнике.'},
+        {cat:'Размножение · Цитрусы',t:'Подвои цитрусовых: основа здорового сада',ex:'Как выбрать правильный подвой для лайма и других цитрусовых.'},
+        {cat:'Размножение · Пекан',t:'Привитый пекан: качество от подвоя',ex:'Сорта, калибры и уход за привитым деревом пекана для экспорта.'},
+        {cat:'Технологии · IoT',t:'Датчики Farm21: точное земледелие',ex:'Мониторинг влажности, температуры и питательных веществ почвы в реальном времени.'},
+        {cat:'Экспорт',t:'Черенок и почка: руководство покупателя',ex:'Что такое черенок, как его прививают и фитосанитарные требования к ввозу.'},
+        {cat:'Размножение · Агава',t:'Голубая агава In-Vitro: клоновое размножение',ex:'Производство растений агавы текиланы методом тканевой культуры.'}
+      ],
+      nH:'Получайте наши руководства',nP:'Подпишитесь и получайте новые статьи о размножении и экспорте на почту.',
+      nPlace:'Ваш email',nBtn:'Подписаться',nOk:'Спасибо! Мы сообщим о публикации.',home:'Главная'},
+
+    zh:{back:'← 首页',kicker:'新闻 · 最新',h1a:'新闻',h1b:'与技术指南',
+      lead:'面向全球种植者的墨西哥植物材料苗圃、繁殖与出口知识。',
+      ribbon:'精选',fCat:'繁殖 · 牛油果',
+      fTitle:'墨西哥牛油果母本种子：决定果园品质的健康源头',
+      fEx:'树木隐藏的另一半——砧木——决定您哈斯果园的寿命、健康与产量。了解六种墨西哥母本种子及其 pH 耐受性。',
+      fMetaA:'Agrosensores 团队',fMetaB:'2026年6月',fMetaC:'9 分钟',fRead:'阅读文章 →',
+      more:'即将发布',soon:'即将推出',min:'分钟',
+      cards:[
+        {cat:'繁殖 · 松树',t:'用于造林和出口的墨西哥松',ex:'在认证苗圃中生产松树和雪松林木苗,适用于造林项目。'},
+        {cat:'繁殖 · 柑橘',t:'柑橘砧木:健康果园的基础',ex:'如何根据您的土壤和气候为波斯青柠等柑橘选择合适的砧木。'},
+        {cat:'繁殖 · 山核桃',t:'嫁接山核桃:源自砧木的品质',ex:'用于出口的嫁接山核桃树的品种、规格与管理。'},
+        {cat:'技术 · IoT',t:'Farm21 传感器:苗圃精准农业',ex:'实时监测土壤多深度的湿度、温度和养分。'},
+        {cat:'出口',t:'接穗与芽木:买家指南',ex:'什么是接穗、如何嫁接以及进口的植物检疫要求。'},
+        {cat:'繁殖 · 龙舌兰',t:'In-Vitro 蓝色龙舌兰:规模化无性繁殖',ex:'通过组织培养生产用于商业种植的龙舌兰植株。'}
+      ],
+      nH:'获取我们的技术指南',nP:'订阅即可将繁殖与出口的新文章直接发送到您的邮箱。',
+      nPlace:'您的电子邮箱',nBtn:'订阅',nOk:'谢谢!发布时我们会通知您。',home:'首页'},
+
+    ko:{back:'← 홈',kicker:'뉴스 · 최신',h1a:'뉴스',h1b:'및 기술 가이드',
+      lead:'전 세계 재배자를 위한 멕시코 식물 자재의 묘목·번식·수출 지식.',
+      ribbon:'추천',fCat:'번식 · 아보카도',
+      fTitle:'멕시코 아보카도 모본 종자: 과수원을 결정하는 건강한 기원',
+      fEx:'나무의 숨겨진 절반인 대목은 하스 과수원의 수명, 건강, 생산성을 결정합니다. 6가지 멕시코 모본 종자와 pH 내성을 알아보세요.',
+      fMetaA:'Agrosensores 팀',fMetaB:'2026년 6월',fMetaC:'9분',fRead:'기사 읽기 →',
+      more:'예정 기사',soon:'곧 공개',min:'분',
+      cards:[
+        {cat:'번식 · 소나무',t:'조림 및 수출용 멕시코 소나무',ex:'인증 묘목장에서 생산하는 소나무·삼나무 임목 묘목.'},
+        {cat:'번식 · 감귤',t:'감귤 대목: 건강한 과수원의 기초',ex:'토양과 기후에 맞는 페르시안 라임 등 감귤 대목 선택법.'},
+        {cat:'번식 · 피칸',t:'접목 피칸: 대목에서 시작하는 품질',ex:'수출용 접목 피칸 나무의 품종, 규격, 관리.'},
+        {cat:'기술 · IoT',t:'Farm21 센서: 묘목장 정밀 농업',ex:'여러 토양 깊이의 수분, 온도, 양분 실시간 모니터링.'},
+        {cat:'수출',t:'접수와 눈접목: 구매자 가이드',ex:'접수란 무엇이며 어떻게 접목하고 수입 식물 검역 요건은 무엇인지.'},
+        {cat:'번식 · 용설란',t:'In-Vitro 블루 아가베: 대규모 클론 번식',ex:'조직 배양을 통한 상업 재배용 아가베 테킬라나 생산.'}
+      ],
+      nH:'기술 가이드 받기',nP:'구독하고 번식 및 수출에 관한 새 기사를 이메일로 받아보세요.',
+      nPlace:'이메일 주소',nBtn:'구독',nOk:'감사합니다! 게시되면 알려드리겠습니다.',home:'홈'}
+  };
+
+  const LEAVES=['🌲','🍋','🌰','📡','🌿','🪴'];
+  const GRADS=['linear-gradient(135deg,#1e3a18,#2d5226)','linear-gradient(135deg,#3a3410,#6a5e20)','linear-gradient(135deg,#3a2a16,#6a4a26)','linear-gradient(135deg,#16283a,#264a6a)','linear-gradient(135deg,#2a1638,#4a2668)','linear-gradient(135deg,#263c10,#426a20)'];
+  const $=s=>document.querySelector(s);
+  function render(lang){
+    const t=T[lang]||T.es;
+    document.documentElement.lang=lang;
+    const rtl=lang==='ar';
+    document.documentElement.dir=rtl?'rtl':'ltr'; document.body.dir=rtl?'rtl':'ltr';
+    $('#back').textContent=t.back;
+    $('#kicker').textContent=t.kicker;
+    $('#h1').innerHTML=t.h1a+' <em>'+t.h1b+'</em>';
+    $('#lead').textContent=t.lead;
+    $('#ribbon').textContent=t.ribbon;
+    $('#fCat').textContent=t.fCat;
+    $('#fTitle').textContent=t.fTitle;
+    $('#fEx').textContent=t.fEx;
+    $('#fMeta').innerHTML='<span>'+t.fMetaA+'</span><span class="dot"></span><span>'+t.fMetaB+'</span><span class="dot"></span><span>'+t.fMetaC+'</span>';
+    $('#fRead').textContent=t.fRead;
+    $('#moreLabel').textContent=t.more;
+    $('#grid').innerHTML=t.cards.map((c,i)=>(
+      '<div class="card soon-card"><div class="ci" style="background:'+GRADS[i]+'"><span class="badge soon">'+t.soon+'</span><span class="leaf">'+LEAVES[i]+'</span></div><div class="cc"><div class="cat">'+c.cat+'</div><h3>'+c.t+'</h3><div class="ex">'+c.ex+'</div></div></div>'
+    )).join('');
+    $('#nH').textContent=t.nH;
+    $('#nP').textContent=t.nP;
+    $('#nEmail').placeholder=t.nPlace;
+    $('#nBtn').textContent=t.nBtn;
+    $('#nOk').textContent=t.nOk;
+    $('#foot').innerHTML='© 2025 Agrosensores y Semillas de México · Morelia, Michoacán · <a href="index.html">'+t.home+'</a>';
+    document.querySelectorAll('.lpill').forEach(b=>b.classList.toggle('on',b.dataset.l===lang));
+    try{localStorage.setItem('agro_lang',lang);}catch(e){}
+  }
+  window.subscribe=function(e){
+    e.preventDefault();
+    $('#nForm').style.display='none';
+    $('#nOk').style.display='block';
+    return false;
+  };
+  document.querySelectorAll('.lpill').forEach(b=>b.addEventListener('click',()=>render(b.dataset.l)));
+  let initial='es';
+  try{
+    const q=new URLSearchParams(location.search).get('lang');
+    if(q&&T[q])initial=q;
+    else{const ls=localStorage.getItem('agro_lang');if(ls&&T[ls])initial=ls;}
+  }catch(e){}
+  render(initial);
+  </script>
+</body>
+</html>

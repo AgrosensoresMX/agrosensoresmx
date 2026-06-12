@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QXDM25B30"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2QXDM25B30');
+  </script>
+  <title>Preguntas Frecuentes · Agrosensores y Semillas de México</title>
+  <meta name="description" content="Preguntas frecuentes sobre productos de propagación, requisitos fitosanitarios, logística, costos y documentación de exportación de Agrosensores y Semillas de México." />
+  <link rel="canonical" href="https://www.agrosensores.mx/faq.html" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Agrosensores y Semillas de México" />
+  <meta property="og:url" content="https://www.agrosensores.mx/faq.html" />
+  <meta property="og:title" content="Preguntas Frecuentes · Agrosensores" />
+  <meta property="og:description" content="Todo lo que un importador necesita saber sobre nuestros productos de propagación y el proceso de exportación fitosanitaria." />
+  <meta property="og:image" content="https://www.agrosensores.mx/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.agrosensores.mx/images/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    :root { --bg:#0E1508; --bg2:#0C1A0A; --cream:#F5EDE0; --olive:#8A9A52; --tan:#C49A6A; --brown:#7B3F18; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--cream); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; }
+
+    .nav { position:sticky; top:0; z-index:100; min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:0 44px; background:rgba(14,21,8,.95); backdrop-filter:blur(20px); border-bottom:1px solid rgba(138,154,82,.16); }
+    .nav-l, .nav-r { display:flex; align-items:center; gap:20px; }
+    .nav img { height:38px; width:auto; filter:brightness(1.6) saturate(.85); display:block; }
+    .nav .back { font-size:14px; color:rgba(245,237,224,.62); text-decoration:none; white-space:nowrap; transition:color .2s; }
+    .nav .back:hover { color:var(--tan); }
+    .lang-pills { display:flex; background:rgba(255,255,255,.05); border-radius:8px; padding:3px; gap:1px; }
+    .lpill { background:none; border:none; color:rgba(245,237,224,.45); padding:4px 9px; border-radius:6px; font-size:11px; font-weight:500; font-family:'DM Sans',sans-serif; cursor:pointer; letter-spacing:.04em; white-space:nowrap; }
+    .lpill:hover { color:var(--olive); background:rgba(138,154,82,.12); }
+    .lpill.on { color:var(--tan); background:rgba(196,154,106,.14); font-weight:700; }
+    .wa { display:inline-flex; align-items:center; gap:7px; background:linear-gradient(135deg,#25D366,#128C7E); border-radius:9px; color:#fff; padding:9px 15px; font-size:13px; font-weight:600; text-decoration:none; box-shadow:0 4px 16px rgba(37,211,102,.28); white-space:nowrap; }
+
+    .hero { text-align:center; padding:84px 24px 56px; position:relative; overflow:hidden; }
+    .hero::after { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 60% 80% at 50% 0%, rgba(138,154,82,.10), transparent 70%); pointer-events:none; }
+    .kicker { color:var(--olive); font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; margin-bottom:16px; }
+    .hero h1 { font-family:'Cormorant Garant',serif; font-size:clamp(40px,6vw,64px); font-weight:700; line-height:1.04; }
+    .hero h1 em { color:var(--tan); font-style:italic; }
+    .hero p { max-width:640px; margin:22px auto 0; font-size:16px; line-height:1.7; color:rgba(245,237,224,.6); }
+
+    .wrap { max-width:880px; margin:0 auto; padding:24px 24px 90px; }
+    .cat { color:var(--olive); font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin:38px 0 14px; padding:0 2px; }
+    .faq { border:1px solid rgba(138,154,82,.16); border-radius:16px; background:rgba(245,237,224,.025); margin-bottom:12px; overflow:hidden; transition:border-color .25s, background .25s; }
+    .faq[open] { border-color:rgba(138,154,82,.42); background:rgba(138,154,82,.06); }
+    .faq summary { list-style:none; cursor:pointer; padding:22px 26px; display:flex; align-items:center; gap:18px; font-size:17px; font-weight:600; color:var(--cream); transition:color .2s; }
+    .faq summary::-webkit-details-marker { display:none; }
+    .faq summary:hover { color:var(--tan); }
+    .faq .q-ico { flex-shrink:0; width:30px; height:30px; border-radius:50%; border:1.5px solid rgba(138,154,82,.4); display:flex; align-items:center; justify-content:center; color:var(--olive); transition:transform .3s, background .25s, color .25s; }
+    .faq[open] .q-ico { transform:rotate(45deg); background:var(--olive); color:var(--bg); border-color:var(--olive); }
+    .faq .a { padding:0 26px 24px 74px; font-size:15px; line-height:1.75; color:rgba(245,237,224,.66); }
+    .faq .a strong { color:var(--cream); font-weight:600; }
+    .faq .a a { color:var(--tan); }
+
+    .cta { max-width:880px; margin:0 auto 90px; padding:44px 40px; border-radius:22px; background:linear-gradient(150deg,#15290F,#0C1A0A); border:1px solid rgba(138,154,82,.2); text-align:center; }
+    .cta h2 { font-family:'Cormorant Garant',serif; font-size:34px; font-weight:700; margin-bottom:10px; }
+    .cta p { color:rgba(245,237,224,.6); font-size:15px; margin-bottom:24px; }
+    .cta .row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+    .btn-p { display:inline-flex; align-items:center; gap:8px; background:linear-gradient(135deg,#8A9A52,#5C6B3A); color:var(--bg); font-weight:700; font-size:14px; padding:14px 24px; border-radius:11px; text-decoration:none; transition:transform .2s, box-shadow .2s; }
+    .btn-p:hover { transform:translateY(-2px); box-shadow:0 12px 28px rgba(138,154,82,.35); }
+    .btn-s { display:inline-flex; align-items:center; gap:8px; background:transparent; border:1px solid rgba(245,237,224,.22); color:var(--cream); font-weight:600; font-size:14px; padding:14px 24px; border-radius:11px; text-decoration:none; transition:background .2s; }
+    .btn-s:hover { background:rgba(245,237,224,.06); }
+
+    footer { background:#070D04; border-top:1px solid rgba(138,154,82,.1); padding:36px 44px; text-align:center; color:rgba(245,237,224,.4); font-size:13px; }
+    footer a { color:var(--olive); text-decoration:none; }
+
+    /* RTL */
+    [dir=rtl] .faq .a { padding:0 74px 24px 26px; }
+    [dir=rtl] .hero p, [dir=rtl] .faq .a { text-align:right; }
+
+    @media (max-width:680px) {
+      .nav { padding:0 18px; gap:10px; }
+      .nav .back { display:none; }
+      .nav-l, .nav-r { gap:10px; }
+      .lang-pills { overflow-x:auto; }
+      .nav .wa span { display:none; }
+      .wa { padding:9px 11px; }
+      .faq summary { padding:18px 18px; font-size:15.5px; gap:14px; }
+      .faq .a { padding:0 18px 20px 60px; }
+      [dir=rtl] .faq .a { padding:0 60px 20px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-l">
+      <a href="index.html" aria-label="Inicio"><img src="images/logo.png" alt="Agrosensores y Semillas de México" /></a>
+      <a class="back" id="back" href="index.html">← Volver al inicio</a>
+    </div>
+    <div class="nav-r">
+      <div class="lang-pills" id="pills">
+        <button class="lpill" data-l="es">ES</button>
+        <button class="lpill" data-l="en">EN</button>
+        <button class="lpill" data-l="fr">FR</button>
+        <button class="lpill" data-l="ar">AR</button>
+        <button class="lpill" data-l="ru">RU</button>
+        <button class="lpill" data-l="zh">中文</button>
+        <button class="lpill" data-l="ko">한국어</button>
+      </div>
+      <a class="wa" href="https://wa.me/524522693414" target="_blank" rel="noopener noreferrer">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="kicker" id="kicker">Centro de ayuda</div>
+    <h1 id="h1">Preguntas <em>frecuentes</em></h1>
+    <p id="heroP"></p>
+  </header>
+
+  <main class="wrap" id="list"></main>
+
+  <section class="cta">
+    <h2 id="ctaH"></h2>
+    <p id="ctaP"></p>
+    <div class="row">
+      <a class="btn-p" id="btnP" href="https://wa.me/524522693414" target="_blank" rel="noopener noreferrer"></a>
+      <a class="btn-s" id="btnS" href="index.html#crm"></a>
+    </div>
+  </section>
+
+  <footer id="foot"></footer>
+
+  <script>
+  const FAQTX = {
+    es:{dir:'ltr',back:'← Volver al inicio',kicker:'Centro de ayuda',h1:'Preguntas',h1em:'frecuentes',
+      heroP:'Todo lo que un importador necesita saber sobre nuestros productos de propagación y el proceso de exportación fitosanitaria a tu país.',
+      cats:['Productos y propagación','Exportación y requisitos fitosanitarios','Logística, costos y documentación','Servicio y contacto'],
+      faqs:[
+        {c:0,q:'¿Qué productos de propagación exportan?',a:'Exportamos material vegetal de **Aguacate Hass**, **Cítricos**, **Nuez Pecanera**, **Pinos Mexicanos** y **Agaves**, en distintas presentaciones: planta de producción, **portainjerto** (seedling), **vareta / yema** (scion · budwood) y **semilla patrón** (pattern seed).'},
+        {c:0,q:'¿Qué es la vareta (scion / budwood) y el portainjerto?',a:'La **vareta o yema** es el material de propagación que aporta la variedad deseada (por ejemplo, Hass) y se injerta sobre un **portainjerto**, que es la planta base que provee el sistema de raíces. La combinación de ambos determina la sanidad, el vigor y la productividad del árbol final.'},
+        {c:0,q:'¿Ofrecen material clonal o In-Vitro?',a:'Sí. Podemos suministrar portainjertos de **origen clonal** o producidos mediante **cultivo In-Vitro** según las necesidades de tu proyecto. Indícanos tu preferencia al solicitar la cotización.'},
+        {c:1,q:'¿A qué países pueden exportar?',a:'Tenemos exportaciones activas a **más de 18 países en 5 continentes**, incluyendo Marruecos, Líbano, Jordania, Kuwait, Italia, España, República de Georgia, Kenia, Nigeria, Sudáfrica y Francia. La exportación a cada país está sujeta a sus requisitos fitosanitarios vigentes.'},
+        {c:1,q:'¿Qué necesito para importar material vegetal a mi país?',a:'El requisito indispensable es un **Permiso de Importación oficial**, firmado y sellado por la oficina de servicios cuarentenarios de tu país. **Sin este documento la exportación no puede ejecutarse.** Antes de tramitarlo, verifica que tu país no tenga restricciones fitosanitarias para la especie que necesitas.'},
+        {c:1,q:'¿Cuál es el proceso paso a paso para importar?',a:'Sigue estos 7 pasos para importar nuestro material vegetal:\n\n**1.** Verificar que **no existan restricciones fitosanitarias** en tu país para la especie deseada.\n**2.** **Solicitar cotización** indicando especie, variedad y tipo de producto.\n**3.** Definir si requieres **patrón clonal o In-Vitro**.\n**4.** Indicar la **cantidad** de producto requerida.\n**5.** Informar el **sustrato o suelo** de destino donde se plantará.\n**6.** Compartir las **condiciones climáticas** anuales de la región.\n**7.** Obtener el **Permiso de Importación oficial** de tu autoridad cuarentenaria.\n\nPuedes ver el detalle completo en la sección [[«Cómo exportamos a tu país»]].'},
+        {c:1,q:'¿Qué certificaciones respaldan su material vegetal?',a:'**SENASICA** es la autoridad federal mexicana que autoriza y emite el **Certificado Fitosanitario Internacional** para la exportación. **CESAVEG** es el laboratorio de análisis fitopatológico que verifica y certifica que la calidad sanitaria del material cumple los requerimientos internacionales.'},
+        {c:1,q:'¿Cuánto tarda el proceso de exportación?',a:'Los tiempos dependen principalmente de la **emisión del Permiso de Importación** en el país destino y de la **temporada de propagación** de cada especie. Al cotizar te damos una estimación realista de calendario y disponibilidad.'},
+        {c:2,q:'¿Cómo se realiza el envío del producto y qué incluye la cotización?',a:'Agrosensores y Semillas de México siempre cotiza el proceso completo de exportación, integrado por seis conceptos:\n\n**1.** El **costo del producto total**, con embalaje de exportación.\n**2.** El **envío terrestre** desde el vivero (zona aguacatera de Michoacán) hasta el aeropuerto de origen.\n**3.** El **envío aéreo** (transporte de carga aérea vía Ciudad de México o Guadalajara) hasta el aeropuerto de destino.\n**4.** Los **gastos aduanales de exportación** (agente logístico de carga).\n**5.** Los **costos de la aduana mexicana e impuestos** para la emisión del Pedimento de Exportación.\n**6.** El **seguro de carga** desde el punto de origen hasta el destino.'},
+        {c:2,q:'¿Existe una orden mínima de compra? ¿Puedo recibir muestras por paquetería?',a:'Sí, manejamos **órdenes mínimas de compra (MOQ — Minimum Order Quantity)** por especie y tipo de producto. Por **restricciones fitosanitarias, no se permite el envío de muestras ni de producto a través de servicios de paquetería comercial** como FedEx, UPS, Estafeta o similares. Todo envío se realiza mediante el proceso oficial de exportación con su documentación fitosanitaria correspondiente.'},
+        {c:2,q:'¿En qué moneda se emiten las cotizaciones?',a:'Nuestras cotizaciones se emiten **únicamente en Euros (EUR)** o en **Dólares Americanos (USD)**.'},
+        {c:2,q:'¿Qué documentos de exportación proporciona Agrosensores?',a:'Para el cumplimiento internacional y aduanal, entregamos la documentación completa de exportación:\n\n**1.** **Factura Comercial Digital Fiscal** validada por el Sistema de Administración Tributaria de México (SAT).\n**2.** **Certificado Fitosanitario Internacional**.\n**3.** **Lista de Empaque** (Packing List).\n**4.** **Pedimento de Exportación** emitido por Aduana México (salida / outgoing).\n**5.** **Análisis de Laboratorio Oficial CESAVEG** que comprueba la nulidad de patógenos.\n**6.** **Certificado de Movilidad y Verificación SIAR México** (TEF — Tercero Especialista Fitosanitario).\n**7.** **Certificado NON-GMO** (Organismo No Modificado Genéticamente).'},
+        {c:3,q:'¿Ofrecen asesoría técnica post-venta?',a:'Sí. Brindamos **asesoría técnica de seguimiento en destino** para cada envío, apoyando el establecimiento y manejo del material vegetal en tus condiciones locales.'},
+        {c:3,q:'¿Cómo solicito una cotización?',a:'Puedes escribirnos por **WhatsApp** o usar el [[formulario de registro de leads]] en nuestra página principal. Te contactamos en menos de 24 horas.'}
+      ],
+      ctaH:'¿No encontraste tu respuesta?',ctaP:'Escríbenos y un asesor te atiende personalmente en tu idioma.',btnP:'Hablar por WhatsApp',btnS:'Solicitar cotización',footLink:'Volver al inicio'},
+
+    en:{dir:'ltr',back:'← Back to home',kicker:'Help center',h1:'Frequently asked',h1em:'questions',
+      heroP:'Everything an importer needs to know about our propagation products and the phytosanitary export process to your country.',
+      cats:['Products & propagation','Export & phytosanitary requirements','Logistics, costs & documentation','Service & contact'],
+      faqs:[
+        {c:0,q:'What propagation products do you export?',a:'We export plant material of **Hass Avocado**, **Citrus**, **Pecan Nut**, **Mexican Pines** and **Agaves**, in different formats: production plant, **rootstock** (seedling), **scion · budwood** and **pattern seed**.'},
+        {c:0,q:'What are scion / budwood and rootstock?',a:'The **scion or bud** is the propagation material that provides the desired variety (for example, Hass) and is grafted onto a **rootstock**, the base plant that provides the root system. The combination of both determines the health, vigor and productivity of the final tree.'},
+        {c:0,q:'Do you offer clonal or In-Vitro material?',a:'Yes. We can supply **clonal-origin** rootstocks or rootstocks produced through **In-Vitro tissue culture** according to your project needs. Let us know your preference when requesting a quote.'},
+        {c:1,q:'Which countries can you export to?',a:'We have active exports to **more than 18 countries on 5 continents**, including Morocco, Lebanon, Jordan, Kuwait, Italy, Spain, Republic of Georgia, Kenya, Nigeria, South Africa and France. Export to each country is subject to its current phytosanitary requirements.'},
+        {c:1,q:'What do I need to import plant material into my country?',a:"The essential requirement is an **official Import Permit**, signed and sealed by your country's quarantine services office. **Without this document, export cannot proceed.** Before applying, verify that your country has no phytosanitary restrictions on the species you need."},
+        {c:1,q:'What is the step-by-step import process?',a:'Follow these 7 steps to import our plant material:\n\n**1.** Verify there are **no phytosanitary restrictions** in your country for the desired species.\n**2.** **Request a quote** specifying species, variety and product type.\n**3.** Define whether you need **clonal or In-Vitro rootstock**.\n**4.** Indicate the required **quantity**.\n**5.** Report the destination **substrate or soil** where it will be planted.\n**6.** Share the annual **climatic conditions** of the region.\n**7.** Obtain the **official Import Permit** from your quarantine authority.\n\nYou can see the full detail in the [[“How we export to your country”]] section.'},
+        {c:1,q:'What certifications back your plant material?',a:'**SENASICA** is the Mexican federal authority that authorizes and issues the **International Phytosanitary Certificate** for export. **CESAVEG** is the phytopathological laboratory that verifies and certifies that the sanitary quality of the material meets international requirements.'},
+        {c:1,q:'How long does the export process take?',a:'Timelines mainly depend on the **issuance of the Import Permit** in the destination country and the **propagation season** of each species. When quoting, we give you a realistic estimate of schedule and availability.'},
+        {c:2,q:'How is the product shipped and what does the quote include?',a:'Agrosensores y Semillas de México always quotes the complete export process, made up of six items:\n\n**1.** The **total product cost**, with export packaging.\n**2.** The **ground transport** from the nursery (Michoacán avocado region) to the airport of origin.\n**3.** The **air freight** (air cargo transport via Mexico City or Guadalajara) to the destination airport.\n**4.** The **export customs charges** (freight logistics agent).\n**5.** The **Mexican customs costs and taxes** for issuing the Export Pedimento.\n**6.** The **cargo insurance** from point of origin to destination.'},
+        {c:2,q:'Is there a minimum order quantity? Can I receive samples by courier?',a:'Yes, we handle **minimum order quantities (MOQ)** per species and product type. Due to **phytosanitary restrictions, sending samples or product through commercial courier services** such as FedEx, UPS, Estafeta or similar **is not allowed**. All shipments are made through the official export process with their corresponding phytosanitary documentation.'},
+        {c:2,q:'In which currency are quotes issued?',a:'Our quotes are issued **exclusively in Euros (EUR)** or **US Dollars (USD)**.'},
+        {c:2,q:'What export documents does Agrosensores provide?',a:"For international and customs compliance, we deliver the complete export documentation:\n\n**1.** **Digital Tax Commercial Invoice** validated by Mexico's Tax Administration Service (SAT).\n**2.** **International Phytosanitary Certificate**.\n**3.** **Packing List**.\n**4.** **Export Pedimento** issued by Mexican Customs (outgoing).\n**5.** **Official CESAVEG Laboratory Analysis** proving the absence of pathogens.\n**6.** **SIAR Mexico Mobility & Verification Certificate** (TEF — Third-Party Phytosanitary Specialist).\n**7.** **NON-GMO Certificate** (Non-Genetically Modified Organism)."},
+        {c:3,q:'Do you offer after-sales technical advice?',a:'Yes. We provide **technical follow-up advisory at destination** for every shipment, supporting the establishment and management of the plant material in your local conditions.'},
+        {c:3,q:'How do I request a quote?',a:'You can write to us on **WhatsApp** or use the [[lead registration form]] on our main page. We contact you within 24 hours.'}
+      ],
+      ctaH:"Didn't find your answer?",ctaP:'Write to us and an advisor will assist you personally in your language.',btnP:'Chat on WhatsApp',btnS:'Request a quote',footLink:'Back to home'},
+
+    fr:{dir:'ltr',back:"← Retour à l'accueil",kicker:"Centre d'aide",h1:'Questions',h1em:'fréquentes',
+      heroP:"Tout ce qu'un importateur doit savoir sur nos produits de propagation et le processus d'exportation phytosanitaire vers votre pays.",
+      cats:['Produits et propagation','Exportation et exigences phytosanitaires','Logistique, coûts et documentation','Service et contact'],
+      faqs:[
+        {c:0,q:'Quels produits de propagation exportez-vous ?',a:"Nous exportons du matériel végétal d'**Avocat Hass**, d'**Agrumes**, de **Noix de Pécan**, de **Pins Mexicains** et d'**Agaves**, sous différentes formes : plante de production, **porte-greffe** (seedling), **greffon / bourgeon** (scion · budwood) et **graine souche** (pattern seed)."},
+        {c:0,q:'Que sont le greffon (scion / budwood) et le porte-greffe ?',a:"Le **greffon ou bourgeon** est le matériel de propagation qui apporte la variété souhaitée (par exemple, Hass) et qui est greffé sur un **porte-greffe**, la plante de base qui fournit le système racinaire. La combinaison des deux détermine la santé, la vigueur et la productivité de l'arbre final."},
+        {c:0,q:'Proposez-vous du matériel clonal ou In-Vitro ?',a:"Oui. Nous pouvons fournir des porte-greffes d'**origine clonale** ou produits par **culture In-Vitro** selon les besoins de votre projet. Indiquez-nous votre préférence lors de la demande de devis."},
+        {c:1,q:'Vers quels pays pouvez-vous exporter ?',a:"Nous avons des exportations actives vers **plus de 18 pays sur 5 continents**, dont le Maroc, le Liban, la Jordanie, le Koweït, l'Italie, l'Espagne, la République de Géorgie, le Kenya, le Nigéria, l'Afrique du Sud et la France. L'exportation vers chaque pays est soumise à ses exigences phytosanitaires en vigueur."},
+        {c:1,q:'De quoi ai-je besoin pour importer du matériel végétal dans mon pays ?',a:"L'exigence indispensable est un **Permis d'Importation officiel**, signé et tamponné par le bureau des services de quarantaine de votre pays. **Sans ce document, l'exportation ne peut pas être réalisée.** Avant de l'obtenir, vérifiez que votre pays n'a pas de restrictions phytosanitaires pour l'espèce dont vous avez besoin."},
+        {c:1,q:"Quel est le processus d'importation étape par étape ?",a:"Suivez ces 7 étapes pour importer notre matériel végétal :\n\n**1.** Vérifier qu'il n'existe **aucune restriction phytosanitaire** dans votre pays pour l'espèce souhaitée.\n**2.** **Demander un devis** en indiquant l'espèce, la variété et le type de produit.\n**3.** Définir si vous avez besoin d'un **porte-greffe clonal ou In-Vitro**.\n**4.** Indiquer la **quantité** requise.\n**5.** Communiquer le **substrat ou sol** de destination où il sera planté.\n**6.** Partager les **conditions climatiques** annuelles de la région.\n**7.** Obtenir le **Permis d'Importation officiel** de votre autorité de quarantaine.\n\nVous pouvez voir le détail complet dans la section [[« Comment nous exportons vers votre pays »]]."},
+        {c:1,q:'Quelles certifications garantissent votre matériel végétal ?',a:'**SENASICA** est l\'autorité fédérale mexicaine qui autorise et délivre le **Certificat Phytosanitaire International** pour l\'exportation. **CESAVEG** est le laboratoire d\'analyse phytopathologique qui vérifie et certifie que la qualité sanitaire du matériel répond aux exigences internationales.'},
+        {c:1,q:"Combien de temps prend le processus d'exportation ?",a:"Les délais dépendent principalement de la **délivrance du Permis d'Importation** dans le pays de destination et de la **saison de propagation** de chaque espèce. Lors du devis, nous vous donnons une estimation réaliste du calendrier et de la disponibilité."},
+        {c:2,q:"Comment se déroule l'expédition du produit et que comprend le devis ?",a:"Agrosensores y Semillas de México devise toujours le processus d'exportation complet, composé de six éléments :\n\n**1.** Le **coût total du produit**, avec emballage d'exportation.\n**2.** Le **transport terrestre** depuis la pépinière (région avocatière du Michoacán) jusqu'à l'aéroport d'origine.\n**3.** Le **fret aérien** (transport de fret aérien via Mexico ou Guadalajara) jusqu'à l'aéroport de destination.\n**4.** Les **frais de douane d'exportation** (agent logistique de fret).\n**5.** Les **coûts de la douane mexicaine et taxes** pour l'émission du Pedimento d'Exportation.\n**6.** L'**assurance de la cargaison** du point d'origine à la destination."},
+        {c:2,q:'Existe-t-il une quantité minimale de commande ? Puis-je recevoir des échantillons par messagerie ?',a:"Oui, nous appliquons des **quantités minimales de commande (MOQ)** par espèce et type de produit. En raison de **restrictions phytosanitaires, l'envoi d'échantillons ou de produits via des services de messagerie commerciale** tels que FedEx, UPS, Estafeta ou similaires **n'est pas autorisé**. Tout envoi se fait par le processus d'exportation officiel avec sa documentation phytosanitaire correspondante."},
+        {c:2,q:'Dans quelle devise les devis sont-ils établis ?',a:'Nos devis sont établis **exclusivement en Euros (EUR)** ou en **Dollars Américains (USD)**.'},
+        {c:2,q:"Quels documents d'exportation Agrosensores fournit-il ?",a:"Pour la conformité internationale et douanière, nous fournissons la documentation d'exportation complète :\n\n**1.** **Facture Commerciale Numérique Fiscale** validée par le Service d'Administration Fiscale du Mexique (SAT).\n**2.** **Certificat Phytosanitaire International**.\n**3.** **Liste de Colisage** (Packing List).\n**4.** **Pedimento d'Exportation** émis par la Douane Mexicaine (sortie).\n**5.** **Analyse de Laboratoire Officiel CESAVEG** prouvant l'absence de pathogènes.\n**6.** **Certificat de Mobilité et Vérification SIAR Mexique** (TEF — Spécialiste Phytosanitaire Tiers).\n**7.** **Certificat NON-OGM** (Organisme Non Génétiquement Modifié)."},
+        {c:3,q:'Offrez-vous un conseil technique après-vente ?',a:"Oui. Nous fournissons un **conseil technique de suivi à destination** pour chaque envoi, soutenant l'établissement et la gestion du matériel végétal dans vos conditions locales."},
+        {c:3,q:'Comment demander un devis ?',a:"Vous pouvez nous écrire sur **WhatsApp** ou utiliser le [[formulaire d'enregistrement de leads]] sur notre page principale. Nous vous contactons en moins de 24 heures."}
+      ],
+      ctaH:"Vous n'avez pas trouvé votre réponse ?",ctaP:'Écrivez-nous et un conseiller vous assistera personnellement dans votre langue.',btnP:'Discuter sur WhatsApp',btnS:'Demander un devis',footLink:"Retour à l'accueil"},
+
+    ar:{dir:'rtl',back:'العودة إلى الرئيسية ←',kicker:'مركز المساعدة',h1:'الأسئلة',h1em:'الشائعة',
+      heroP:'كل ما يحتاج المستورد معرفته عن منتجاتنا للتكاثر وعملية التصدير الصحي النباتي إلى بلدك.',
+      cats:['المنتجات والتكاثر','التصدير والمتطلبات الصحية النباتية','اللوجستيات والتكاليف والوثائق','الخدمة والتواصل'],
+      faqs:[
+        {c:0,q:'ما هي منتجات التكاثر التي تصدّرونها؟',a:'نصدّر مواد نباتية من **أفوكادو هاس** و**الحمضيات** و**جوز البيكان** و**الصنوبر المكسيكي** و**الأغاف**، بأشكال مختلفة: نبات إنتاج، **أصل** (seedling)، **قلم / برعم** (scion · budwood)، و**بذرة نمطية** (pattern seed).'},
+        {c:0,q:'ما هو القلم (scion / budwood) والأصل؟',a:'**القلم أو البرعم** هو مادة التكاثر التي توفر الصنف المطلوب (مثل هاس) ويتم تطعيمه على **أصل**، وهو النبات الأساسي الذي يوفر نظام الجذور. يحدد الجمع بينهما صحة الشجرة النهائية وقوتها وإنتاجيتها.'},
+        {c:0,q:'هل تقدمون مواد نسيلية أو In-Vitro؟',a:'نعم. يمكننا توفير أصول من **أصل نسيلي** أو منتجة عبر **زراعة الأنسجة In-Vitro** وفقاً لاحتياجات مشروعك. أخبرنا بتفضيلك عند طلب عرض الأسعار.'},
+        {c:1,q:'إلى أي البلدان يمكنكم التصدير؟',a:'لدينا صادرات نشطة إلى **أكثر من 18 دولة في 5 قارات**، بما في ذلك المغرب ولبنان والأردن والكويت وإيطاليا وإسبانيا وجمهورية جورجيا وكينيا ونيجيريا وجنوب أفريقيا وفرنسا. يخضع التصدير إلى كل دولة لمتطلباتها الصحية النباتية السارية.'},
+        {c:1,q:'ماذا أحتاج لاستيراد المواد النباتية إلى بلدي؟',a:'الشرط الأساسي هو **إذن استيراد رسمي**، موقّع ومختوم من مكتب خدمات الحجر الصحي في بلدك. **بدون هذه الوثيقة لا يمكن تنفيذ التصدير.** قبل استخراجه، تحقق من أن بلدك لا يفرض قيوداً صحية نباتية على النوع الذي تحتاجه.'},
+        {c:1,q:'ما هي عملية الاستيراد خطوة بخطوة؟',a:'اتبع هذه الخطوات السبع لاستيراد موادنا النباتية:\n\n**1.** التحقق من **عدم وجود قيود صحية نباتية** في بلدك للنوع المطلوب.\n**2.** **طلب عرض أسعار** مع تحديد النوع والصنف ونوع المنتج.\n**3.** تحديد ما إذا كنت تحتاج إلى **أصل نسيلي أو In-Vitro**.\n**4.** تحديد **الكمية** المطلوبة.\n**5.** الإبلاغ عن **التربة أو الركيزة** في الوجهة حيث سيُزرع.\n**6.** مشاركة **الظروف المناخية** السنوية للمنطقة.\n**7.** الحصول على **إذن الاستيراد الرسمي** من سلطة الحجر الصحي لديك.\n\nيمكنك رؤية التفاصيل الكاملة في قسم [[«كيف نُصدّر إلى بلدك»]].'},
+        {c:1,q:'ما الشهادات التي تدعم موادكم النباتية؟',a:'**SENASICA** هي السلطة الفيدرالية المكسيكية التي تصرّح وتُصدر **الشهادة الصحية النباتية الدولية** للتصدير. **CESAVEG** هو مختبر التحليل المرضي النباتي الذي يتحقق ويصادق على أن الجودة الصحية للمواد تلبي المتطلبات الدولية.'},
+        {c:1,q:'كم تستغرق عملية التصدير؟',a:'تعتمد المدة بشكل رئيسي على **إصدار إذن الاستيراد** في بلد الوجهة و**موسم التكاثر** لكل نوع. عند تقديم العرض، نمنحك تقديراً واقعياً للجدول الزمني والتوفر.'},
+        {c:2,q:'كيف يتم شحن المنتج وماذا يتضمن عرض الأسعار؟',a:'تقوم Agrosensores y Semillas de México دائماً بتسعير عملية التصدير الكاملة، المكوّنة من ستة عناصر:\n\n**1.** **التكلفة الإجمالية للمنتج**، مع تغليف التصدير.\n**2.** **النقل البري** من المشتل (منطقة الأفوكادو في ميتشواكان) إلى مطار المنشأ.\n**3.** **الشحن الجوي** (نقل الشحن الجوي عبر مكسيكو سيتي أو غوادالاخارا) إلى مطار الوجهة.\n**4.** **رسوم جمارك التصدير** (وكيل لوجستي للشحن).\n**5.** **تكاليف الجمارك المكسيكية والضرائب** لإصدار بيان التصدير (Pedimento).\n**6.** **تأمين الشحنة** من نقطة المنشأ إلى الوجهة.'},
+        {c:2,q:'هل يوجد حد أدنى للطلب؟ هل يمكنني استلام عينات عبر شركات الشحن السريع؟',a:'نعم، نطبّق **حد أدنى لكمية الطلب (MOQ)** حسب النوع ونوع المنتج. بسبب **القيود الصحية النباتية، لا يُسمح بإرسال العينات أو المنتجات عبر خدمات الشحن التجارية** مثل FedEx أو UPS أو Estafeta أو ما شابه. تتم جميع الشحنات عبر عملية التصدير الرسمية مع وثائقها الصحية النباتية المقابلة.'},
+        {c:2,q:'بأي عملة تُصدر عروض الأسعار؟',a:'تُصدر عروض أسعارنا **حصرياً باليورو (EUR)** أو **الدولار الأمريكي (USD)**.'},
+        {c:2,q:'ما وثائق التصدير التي تقدمها Agrosensores؟',a:'للامتثال الدولي والجمركي، نقدم وثائق التصدير الكاملة:\n\n**1.** **فاتورة تجارية رقمية ضريبية** مصادق عليها من مصلحة الإدارة الضريبية المكسيكية (SAT).\n**2.** **الشهادة الصحية النباتية الدولية**.\n**3.** **قائمة التعبئة** (Packing List).\n**4.** **بيان التصدير (Pedimento)** الصادر عن الجمارك المكسيكية (الخروج).\n**5.** **تحليل المختبر الرسمي CESAVEG** الذي يثبت خلو المنتج من مسببات الأمراض.\n**6.** **شهادة الحركة والتحقق SIAR المكسيك** (TEF — أخصائي صحة نباتية طرف ثالث).\n**7.** **شهادة عدم التعديل الوراثي NON-GMO**.'},
+        {c:3,q:'هل تقدمون استشارة تقنية بعد البيع؟',a:'نعم. نقدم **استشارة تقنية للمتابعة في الوجهة** لكل شحنة، لدعم تأسيس وإدارة المواد النباتية في ظروفك المحلية.'},
+        {c:3,q:'كيف أطلب عرض أسعار؟',a:'يمكنك مراسلتنا عبر **واتساب** أو استخدام [[نموذج تسجيل العملاء]] في صفحتنا الرئيسية. نتواصل معك خلال أقل من 24 ساعة.'}
+      ],
+      ctaH:'لم تجد إجابتك؟',ctaP:'راسلنا وسيخدمك مستشار شخصياً بلغتك.',btnP:'تحدث عبر واتساب',btnS:'اطلب عرض أسعار',footLink:'العودة إلى الرئيسية'},
+
+    ru:{dir:'ltr',back:'← Назад на главную',kicker:'Справочный центр',h1:'Частые',h1em:'вопросы',
+      heroP:'Всё, что нужно знать импортёру о наших продуктах размножения и процессе фитосанитарного экспорта в вашу страну.',
+      cats:['Продукты и размножение','Экспорт и фитосанитарные требования','Логистика, расходы и документы','Сервис и контакты'],
+      faqs:[
+        {c:0,q:'Какие продукты размножения вы экспортируете?',a:'Мы экспортируем растительный материал **Авокадо Хасс**, **Цитрусовых**, **Пекана**, **Мексиканской сосны** и **Агав** в различных формах: производственное растение, **подвой** (seedling), **черенок / почка** (scion · budwood) и **семена-патрон** (pattern seed).'},
+        {c:0,q:'Что такое черенок (scion / budwood) и подвой?',a:'**Черенок или почка** — это материал размножения, который обеспечивает нужный сорт (например, Хасс) и прививается на **подвой** — базовое растение, обеспечивающее корневую систему. Сочетание обоих определяет здоровье, силу роста и продуктивность конечного дерева.'},
+        {c:0,q:'Предлагаете ли вы клоновый или In-Vitro материал?',a:'Да. Мы можем поставлять подвои **клонового происхождения** или произведённые методом **тканевой культуры In-Vitro** в зависимости от потребностей вашего проекта. Сообщите о ваших предпочтениях при запросе предложения.'},
+        {c:1,q:'В какие страны вы можете экспортировать?',a:'У нас активный экспорт в **более чем 18 стран на 5 континентах**, включая Марокко, Ливан, Иорданию, Кувейт, Италию, Испанию, Республику Грузия, Кению, Нигерию, ЮАР и Францию. Экспорт в каждую страну зависит от её действующих фитосанитарных требований.'},
+        {c:1,q:'Что нужно для импорта растительного материала в мою страну?',a:'Обязательное требование — **официальное Разрешение на ввоз**, подписанное и заверенное офисом карантинных служб вашей страны. **Без этого документа экспорт невозможен.** Перед оформлением убедитесь, что в вашей стране нет фитосанитарных ограничений на нужный вид.'},
+        {c:1,q:'Каков пошаговый процесс импорта?',a:'Выполните эти 7 шагов для импорта нашего растительного материала:\n\n**1.** Убедитесь, что в вашей стране **нет фитосанитарных ограничений** для нужного вида.\n**2.** **Запросите предложение**, указав вид, сорт и тип продукта.\n**3.** Определите, нужен ли вам **клоновый или In-Vitro подвой**.\n**4.** Укажите необходимое **количество**.\n**5.** Сообщите о **субстрате или почве** в пункте назначения, где будет высажен материал.\n**6.** Поделитесь годовыми **климатическими условиями** региона.\n**7.** Получите **официальное Разрешение на ввоз** от вашего карантинного органа.\n\nПолную информацию см. в разделе [[«Как мы экспортируем в вашу страну»]].'},
+        {c:1,q:'Какие сертификаты подтверждают ваш растительный материал?',a:'**SENASICA** — федеральный орган Мексики, который уполномочивает и выдаёт **Международный фитосанитарный сертификат** для экспорта. **CESAVEG** — фитопатологическая лаборатория, которая проверяет и сертифицирует, что санитарное качество материала соответствует международным требованиям.'},
+        {c:1,q:'Сколько времени занимает процесс экспорта?',a:'Сроки в основном зависят от **выдачи Разрешения на ввоз** в стране назначения и **сезона размножения** каждого вида. При составлении предложения мы даём реалистичную оценку графика и наличия.'},
+        {c:2,q:'Как осуществляется отправка продукта и что включает предложение?',a:'Agrosensores y Semillas de México всегда рассчитывает полный процесс экспорта, состоящий из шести составляющих:\n\n**1.** **Общая стоимость продукта** с экспортной упаковкой.\n**2.** **Наземная перевозка** от питомника (регион авокадо Мичоакан) до аэропорта отправления.\n**3.** **Авиаперевозка** (грузовой авиатранспорт через Мехико или Гвадалахару) до аэропорта назначения.\n**4.** **Экспортные таможенные сборы** (логистический грузовой агент).\n**5.** **Расходы мексиканской таможни и налоги** на оформление экспортной декларации (Pedimento).\n**6.** **Страхование груза** от пункта отправления до пункта назначения.'},
+        {c:2,q:'Есть ли минимальный объём заказа? Могу ли я получить образцы курьерской службой?',a:'Да, мы применяем **минимальный объём заказа (MOQ)** по видам и типам продукции. Из-за **фитосанитарных ограничений отправка образцов или продукции через коммерческие курьерские службы** такие как FedEx, UPS, Estafeta и подобные **не допускается**. Все отправки осуществляются через официальный процесс экспорта с соответствующей фитосанитарной документацией.'},
+        {c:2,q:'В какой валюте выставляются предложения?',a:'Наши предложения выставляются **исключительно в Евро (EUR)** или **долларах США (USD)**.'},
+        {c:2,q:'Какие экспортные документы предоставляет Agrosensores?',a:'Для международного и таможенного соответствия мы предоставляем полный пакет экспортных документов:\n\n**1.** **Электронный фискальный коммерческий счёт**, заверенный Налоговой службой Мексики (SAT).\n**2.** **Международный фитосанитарный сертификат**.\n**3.** **Упаковочный лист** (Packing List).\n**4.** **Экспортная декларация (Pedimento)**, выданная Таможней Мексики (вывоз).\n**5.** **Анализ официальной лаборатории CESAVEG**, подтверждающий отсутствие патогенов.\n**6.** **Сертификат мобильности и проверки SIAR Мексика** (TEF — сторонний фитосанитарный специалист).\n**7.** **Сертификат NON-GMO** (генетически немодифицированный организм).'},
+        {c:3,q:'Предоставляете ли вы послепродажную техническую консультацию?',a:'Да. Мы предоставляем **техническое сопровождение в пункте назначения** для каждой отправки, поддерживая укоренение и управление растительным материалом в ваших местных условиях.'},
+        {c:3,q:'Как запросить предложение?',a:'Вы можете написать нам в **WhatsApp** или воспользоваться [[формой регистрации лидов]] на нашей главной странице. Мы свяжемся с вами в течение 24 часов.'}
+      ],
+      ctaH:'Не нашли ответ?',ctaP:'Напишите нам, и консультант лично поможет вам на вашем языке.',btnP:'Написать в WhatsApp',btnS:'Запросить предложение',footLink:'Назад на главную'},
+
+    zh:{dir:'ltr',back:'← 返回首页',kicker:'帮助中心',h1:'常见',h1em:'问题',
+      heroP:'进口商需要了解的关于我们繁殖产品以及向贵国进行植物检疫出口流程的一切信息。',
+      cats:['产品与繁殖','出口与植物检疫要求','物流、成本与单证','服务与联系'],
+      faqs:[
+        {c:0,q:'你们出口哪些繁殖产品？',a:'我们出口**哈斯牛油果**、**柑橘**、**山核桃**、**墨西哥松**和**龙舌兰**的植物材料，提供不同形式：生产苗、**砧木**（seedling）、**接穗 / 芽木**（scion · budwood）以及**母本种子**（pattern seed）。'},
+        {c:0,q:'什么是接穗（scion / budwood）和砧木？',a:'**接穗或芽**是提供所需品种（例如哈斯）的繁殖材料，嫁接到**砧木**上，砧木是提供根系的基础植株。两者的组合决定最终树木的健康度、长势和产量。'},
+        {c:0,q:'你们提供无性系或 In-Vitro 材料吗？',a:'是的。我们可以根据您的项目需求提供**无性系来源**的砧木或通过 **In-Vitro 组织培养**生产的砧木。请在索取报价时告知您的偏好。'},
+        {c:1,q:'你们可以出口到哪些国家？',a:'我们已向**5 大洲超过 18 个国家**活跃出口，包括摩洛哥、黎巴嫩、约旦、科威特、意大利、西班牙、格鲁吉亚共和国、肯尼亚、尼日利亚、南非和法国。向各国出口须符合其现行植物检疫要求。'},
+        {c:1,q:'将植物材料进口到我的国家需要什么？',a:'必备条件是由贵国检疫服务办公室签字盖章的**官方进口许可证**。**没有此文件，出口无法进行。**申请前请确认贵国对您所需物种没有植物检疫限制。'},
+        {c:1,q:'逐步的进口流程是怎样的？',a:'按照以下 7 个步骤进口我们的植物材料：\n\n**1.** 确认贵国对所需物种**没有植物检疫限制**。\n**2.** **索取报价**，注明物种、品种和产品类型。\n**3.** 确定您需要**无性系还是 In-Vitro 砧木**。\n**4.** 注明所需**数量**。\n**5.** 告知将种植的目的地**基质或土壤**。\n**6.** 分享该地区的年度**气候条件**。\n**7.** 从您的检疫机构获取**官方进口许可证**。\n\n您可以在[[「我们如何出口到贵国」]]部分查看完整详情。'},
+        {c:1,q:'哪些认证为你们的植物材料背书？',a:'**SENASICA** 是墨西哥联邦机构，授权并签发用于出口的**国际植物检疫证书**。**CESAVEG** 是植物病理分析实验室，核查并认证材料的卫生质量符合国际要求。'},
+        {c:1,q:'出口流程需要多长时间？',a:'时间主要取决于目的地国**进口许可证的签发**以及各物种的**繁殖季节**。报价时，我们会为您提供切合实际的时间表和供货估计。'},
+        {c:2,q:'产品如何运输，报价包含哪些内容？',a:'Agrosensores y Semillas de México 始终对完整出口流程进行报价，包含六个部分：\n\n**1.** 含出口包装的**产品总成本**。\n**2.** 从苗圃（米却肯牛油果产区）到始发机场的**陆运**。\n**3.** 到目的地机场的**空运**（经墨西哥城或瓜达拉哈拉的航空货运）。\n**4.** **出口清关费用**（货运物流代理）。\n**5.** 签发出口报关单（Pedimento）的**墨西哥海关费用及税款**。\n**6.** 从始发地到目的地的**货物保险**。'},
+        {c:2,q:'是否有最低起订量？我可以通过快递接收样品吗？',a:'是的，我们按物种和产品类型设有**最低起订量（MOQ）**。由于**植物检疫限制，不允许通过商业快递服务**（如 FedEx、UPS、Estafeta 或类似公司）**邮寄样品或产品**。所有运输均通过官方出口流程并附带相应的植物检疫单证进行。'},
+        {c:2,q:'报价以哪种货币结算？',a:'我们的报价**仅以欧元（EUR）**或**美元（USD）**结算。'},
+        {c:2,q:'Agrosensores 提供哪些出口单证？',a:'为符合国际及海关合规要求，我们提供完整的出口单证：\n\n**1.** 经墨西哥税务管理局（SAT）验证的**数字税务商业发票**。\n**2.** **国际植物检疫证书**。\n**3.** **装箱单**（Packing List）。\n**4.** 墨西哥海关签发的**出口报关单（Pedimento）**（出境）。\n**5.** 证明无病原体的 **CESAVEG 官方实验室分析**。\n**6.** **SIAR 墨西哥流动与核查证书**（TEF — 第三方植物检疫专家）。\n**7.** **非转基因证书（NON-GMO）**。'},
+        {c:3,q:'你们提供售后技术咨询吗？',a:'是的。我们为每批货物提供**目的地技术跟进咨询**，支持植物材料在您当地条件下的定植与管理。'},
+        {c:3,q:'我如何索取报价？',a:'您可以通过 **WhatsApp** 联系我们，或使用主页上的[[潜在客户登记表]]。我们会在 24 小时内与您联系。'}
+      ],
+      ctaH:'没有找到您的答案？',ctaP:'联系我们，顾问将以您的语言为您提供个人服务。',btnP:'通过 WhatsApp 咨询',btnS:'索取报价',footLink:'返回首页'},
+
+    ko:{dir:'ltr',back:'← 홈으로 돌아가기',kicker:'도움말 센터',h1:'자주 묻는',h1em:'질문',
+      heroP:'수입업자가 알아야 할 당사의 번식 제품과 귀국으로의 식물 검역 수출 절차에 대한 모든 것.',
+      cats:['제품 및 번식','수출 및 식물 검역 요건','물류, 비용 및 서류','서비스 및 연락'],
+      faqs:[
+        {c:0,q:'어떤 번식 제품을 수출하나요?',a:'**하스 아보카도**, **감귤**, **피칸**, **멕시코 소나무**, **용설란**의 식물 자재를 다양한 형태로 수출합니다: 생산묘, **대목**(seedling), **접수 / 눈접목**(scion · budwood), **모본 종자**(pattern seed).'},
+        {c:0,q:'접수(scion / budwood)와 대목이 무엇인가요?',a:'**접수 또는 눈**은 원하는 품종(예: 하스)을 제공하는 번식 자재로, 뿌리 시스템을 제공하는 기본 식물인 **대목**에 접목됩니다. 둘의 조합이 최종 나무의 건강, 활력, 생산성을 결정합니다.'},
+        {c:0,q:'클론 또는 In-Vitro 자재를 제공하나요?',a:'네. 프로젝트 요구에 따라 **클론 유래** 대목 또는 **In-Vitro 조직 배양**으로 생산된 대목을 공급할 수 있습니다. 견적 요청 시 선호 사항을 알려주세요.'},
+        {c:1,q:'어느 국가로 수출할 수 있나요?',a:'모로코, 레바논, 요르단, 쿠웨이트, 이탈리아, 스페인, 조지아 공화국, 케냐, 나이지리아, 남아공, 프랑스를 포함하여 **5개 대륙 18개국 이상**으로 활발히 수출하고 있습니다. 각국으로의 수출은 해당국의 현행 식물 검역 요건을 따릅니다.'},
+        {c:1,q:'우리나라로 식물 자재를 수입하려면 무엇이 필요한가요?',a:'필수 요건은 귀국의 검역 서비스 사무소가 서명·날인한 **공식 수입 허가증**입니다. **이 서류 없이는 수출을 진행할 수 없습니다.** 신청 전에 귀국이 필요한 품종에 대한 식물 검역 제한이 없는지 확인하세요.'},
+        {c:1,q:'단계별 수입 절차는 어떻게 되나요?',a:'당사 식물 자재를 수입하려면 다음 7단계를 따르세요:\n\n**1.** 귀국에 해당 품종에 대한 **식물 검역 제한이 없는지** 확인.\n**2.** 품종, 변종, 제품 유형을 명시하여 **견적 요청**.\n**3.** **클론 또는 In-Vitro 대목** 필요 여부 결정.\n**4.** 필요한 **수량** 명시.\n**5.** 식재될 도착지 **기질 또는 토양** 정보 제공.\n**6.** 해당 지역의 연간 **기후 조건** 공유.\n**7.** 검역 당국으로부터 **공식 수입 허가증** 취득.\n\n자세한 내용은 [[「당사의 귀국 수출 방법」]] 섹션에서 확인할 수 있습니다.'},
+        {c:1,q:'어떤 인증이 식물 자재를 보증하나요?',a:'**SENASICA**는 수출용 **국제 식물 검역 증명서**를 승인·발급하는 멕시코 연방 기관입니다. **CESAVEG**는 자재의 위생 품질이 국제 요건을 충족하는지 검증·인증하는 식물병리 분석 실험실입니다.'},
+        {c:1,q:'수출 절차는 얼마나 걸리나요?',a:'기간은 주로 도착국의 **수입 허가증 발급**과 각 품종의 **번식 시즌**에 따라 달라집니다. 견적 시 일정과 가용성에 대한 현실적인 추정치를 제공합니다.'},
+        {c:2,q:'제품 배송은 어떻게 이루어지며 견적에는 무엇이 포함되나요?',a:'Agrosensores y Semillas de México는 항상 여섯 가지 항목으로 구성된 전체 수출 절차를 견적합니다:\n\n**1.** 수출 포장이 포함된 **총 제품 비용**.\n**2.** 묘목장(미초아칸 아보카도 지역)에서 출발 공항까지의 **육상 운송**.\n**3.** 도착 공항까지의 **항공 운송**(멕시코시티 또는 과달라하라 경유 항공 화물).\n**4.** **수출 통관 비용**(화물 물류 대행사).\n**5.** 수출 신고서(Pedimento) 발급을 위한 **멕시코 세관 비용 및 세금**.\n**6.** 출발지에서 도착지까지의 **화물 보험**.'},
+        {c:2,q:'최소 주문 수량이 있나요? 택배로 샘플을 받을 수 있나요?',a:'네, 품종과 제품 유형별로 **최소 주문 수량(MOQ)**을 적용합니다. **식물 검역 제한으로 인해 FedEx, UPS, Estafeta 등 상업 택배 서비스를 통한 샘플 또는 제품 발송은 허용되지 않습니다.** 모든 배송은 해당 식물 검역 서류를 갖춘 공식 수출 절차를 통해 이루어집니다.'},
+        {c:2,q:'견적은 어떤 통화로 발행되나요?',a:'당사 견적은 **유로(EUR)** 또는 **미국 달러(USD)**로만 발행됩니다.'},
+        {c:2,q:'Agrosensores는 어떤 수출 서류를 제공하나요?',a:'국제 및 통관 준수를 위해 완전한 수출 서류를 제공합니다:\n\n**1.** 멕시코 국세청(SAT)이 검증한 **디지털 세금 상업 송장**.\n**2.** **국제 식물 검역 증명서**.\n**3.** **포장 명세서**(Packing List).\n**4.** 멕시코 세관이 발급한 **수출 신고서(Pedimento)**(반출).\n**5.** 병원체 부재를 입증하는 **CESAVEG 공식 실험실 분석**.\n**6.** **SIAR 멕시코 이동 및 검증 증명서**(TEF — 제3자 식물 검역 전문가).\n**7.** **비유전자변형 증명서(NON-GMO)**.'},
+        {c:3,q:'판매 후 기술 자문을 제공하나요?',a:'네. 모든 배송에 대해 **도착지 기술 후속 자문**을 제공하여 현지 조건에서 식물 자재의 정착과 관리를 지원합니다.'},
+        {c:3,q:'견적은 어떻게 요청하나요?',a:'**WhatsApp**으로 문의하시거나 메인 페이지의 [[리드 등록 양식]]을 이용하세요. 24시간 이내에 연락드립니다.'}
+      ],
+      ctaH:'답을 찾지 못하셨나요?',ctaP:'문의해 주시면 상담원이 귀하의 언어로 직접 도와드립니다.',btnP:'WhatsApp으로 문의',btnS:'견적 요청',footLink:'홈으로 돌아가기'}
+  };
+
+  const FOOT_PRE = '© 2025 Agrosensores y Semillas de México · Morelia, Michoacán · ';
+  const $ = s => document.querySelector(s);
+  function md(s){
+    return s
+      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+      .replace(/\[\[(.+?)\]\]/g,'<a href="index.html#crm">$1</a>')
+      .replace(/\n/g,'<br>');
+  }
+  function render(lang){
+    const t = FAQTX[lang] || FAQTX.es;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = t.dir || 'ltr';
+    document.body.dir = t.dir || 'ltr';
+    $('#back').textContent = t.back;
+    $('#kicker').textContent = t.kicker;
+    $('#h1').innerHTML = t.h1 + ' <em>' + t.h1em + '</em>';
+    $('#heroP').textContent = t.heroP;
+    let html = '';
+    t.cats.forEach((cat, ci) => {
+      html += '<div class="cat">' + cat + '</div>';
+      t.faqs.filter(f => f.c === ci).forEach(f => {
+        html += '<details class="faq"><summary><span class="q-ico">+</span><span>' + f.q + '</span></summary><div class="a">' + md(f.a) + '</div></details>';
+      });
+    });
+    $('#list').innerHTML = html;
+    $('#ctaH').textContent = t.ctaH;
+    $('#ctaP').textContent = t.ctaP;
+    $('#btnP').textContent = t.btnP;
+    $('#btnS').textContent = t.btnS;
+    $('#foot').innerHTML = FOOT_PRE + '<a href="index.html">' + t.footLink + '</a>';
+    document.querySelectorAll('.lpill').forEach(b => b.classList.toggle('on', b.dataset.l === lang));
+    try { localStorage.setItem('agro_faq_lang', lang); } catch(e) {}
+  }
+  document.querySelectorAll('.lpill').forEach(b => b.addEventListener('click', () => render(b.dataset.l)));
+  let initial = 'es';
+  try {
+    const q = new URLSearchParams(location.search).get('lang');
+    if (q && FAQTX[q]) initial = q;
+    else { const ls = localStorage.getItem('agro_faq_lang'); if (ls && FAQTX[ls]) initial = ls; }
+  } catch(e) {}
+  render(initial);
+  </script>
+</body>
+</html>
